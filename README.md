@@ -3,7 +3,7 @@
 # Project Overview
 This project is a full-stack website inspired by Airbnb, allowing users to:
 
-![Home-page](./project-images/Home-page.png)
+![Home-page](Project-images/Home-page.png)
 
 - Browse listings: Explore various listings offered by hosts.
 - View details: Access detailed information about each listing, including pictures, location, amenities, and host description.
