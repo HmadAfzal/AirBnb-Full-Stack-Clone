@@ -41,7 +41,7 @@ This project is a full-stack website inspired by Airbnb, allowing users to:
 # Features
 - User authentication: Secure sign-up, login, and logout functionalities.
 - Listing management: Create, edit, and delete listings with comprehensive details.
-- Review system: Enable users to leave reviews for listings they've stayed in (assuming implemented).
+- Review system: Enable users to leave reviews for listings they've stayed in.
 - Interactive map: Display listings' locations on a user-friendly Mapbox map.
 
 
