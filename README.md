@@ -3,7 +3,7 @@
 # Project Overview
 This project is a full-stack website inspired by Airbnb, allowing users to:
 
-![Home-page](/project-images/Home-page.png)
+![Home-page](./project-images/Home-page.png)
 
 - Browse listings: Explore various listings offered by hosts.
 - View details: Access detailed information about each listing, including pictures, location, amenities, and host description.
@@ -43,14 +43,6 @@ This project is a full-stack website inspired by Airbnb, allowing users to:
 - Listing management: Create, edit, and delete listings with comprehensive details.
 - Review system: Enable users to leave reviews for listings they've stayed in (assuming implemented).
 - Interactive map: Display listings' locations on a user-friendly Mapbox map.
-
-# Setup Instructions
-- Clone the repository:
-
-Bash
-git clone https://github.com/your-username/your-repo-name.git
-Use code with caution.
-Install dependencies:
 
 
 # Contributing
