@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div id="filters">
+    <div id="filter"><i class="fa-solid filterfonts fa-fire"></i>Trending</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-bed"></i>Rooms</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-mountain-city"></i>City</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-person-swimming"></i>Pools</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-mountain"></i>Mountains</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-chess-rook"></i>Castles</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-campground"></i>Islands</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-cow"></i>Farms</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-snowflake"></i>Arctic</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-tractor"></i>Field</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-igloo"></i>Domes</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-ship"></i>Ships</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-dove"></i>Jungls</div>
+    <div id="filter"><i class="fa-solid filterfonts fa-bath"></i>Bath</div>
+    
+</div>
+    
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 cardp ml-3 mr-3 ">
+        <% for (let i=0; i < listings.length; i++) { %>
+            <a href="/listings/<%=listings[i]._id  %>" class="listing-link">
+                <div class="card cardc col" style="width: 23rem;">
+                    <img src=<%=listings[i].image.url %> class="card-img-top" alt="listing img" style="height:18rem;">
+                    <div class="card-body">
+                        <b>
+                            <p class="card-text">
+                                <%= listings[i].title %>
+                            </p>
+                        </b>
+                        <%= listings[i].country %> <br>
+                        <p class="mb-0">PKR <%= listings[i].price.toLocaleString('en-PK') %>/night</p><span class="tax mt-0"><i>18% gst</i></span>
+                    </div>
+                </div>
+            </a>
+            <% } %>
+    </div>

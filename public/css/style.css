@@ -1,0 +1,184 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+   height: 100vh !important;
+   width: 100vw !important;
+        margin: 0;
+        padding: 0;
+}
+    nav{
+    background-color: rgb(255, 255, 255);
+    height: 5rem;
+}
+
+.fa-compass{
+    color: rgb(255,56,92);
+    font-size: 2rem;
+}
+.navbar-nav a {
+    color: rgb(91, 91, 91) !important;
+    transition: all 0.2s ease;
+   
+}
+.navbar-nav a:hover{
+    color: black !important;
+}
+.hicon{
+    padding-left: 1rem;
+}
+.info{
+    height:8rem;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoSocials i{
+    font-size: 1.5rem;  
+}
+.infoSocials :nth-child(2){
+    
+    padding: 0px 1rem;
+}
+.links a{
+    color: rgb(44, 44, 44);
+    gap: 1rem;
+}
+.links a:hover{
+    color: rgb(44, 44, 44);
+    text-decoration: underline;
+
+}
+
+.listingheading{
+    margin: 2rem 2rem;
+}
+.card {
+    border: none;  
+    margin-bottom: 2rem; 
+    transition: all 0.2s ease;
+}
+
+.cardc:hover {
+    transform: scale(0.97);
+}
+
+.card-body {
+    padding: 0% !important;
+    color: black;
+}
+
+.card img{
+   width: 100% ;
+   object-fit: cover !important;
+   border-radius: 1rem;
+  
+}
+.listing-link{
+    text-decoration: none;
+}
+.listing-link:hover{
+    text-decoration: none;
+}
+label{
+    font-weight: 700;
+}
+.form-control{
+    border: 1px solid black !important;
+}
+.formnew{
+    margin: 2rem 0rem;
+}
+.formnew button{
+    background-color:rgb(255,56,92) ;
+    border: none;
+    padding: 5px 25px;
+    width: 100%;
+    border-radius: 0.2rem;
+    font-weight: 500;
+    border: 1.5px solid black;
+}
+.editbtn{
+    background-color:rgb(255,56,92) ;
+    padding: 5px 25px;
+    width: 100%;
+    border-radius: 0.2rem;
+    font-weight: 500;
+    border: 1.5px solid black;
+}
+.editheading{
+    margin-top: 2rem;
+}
+.editform{
+    margin: 2rem 0rem;
+}
+.viewcard img{
+    object-fit: cover;
+    font-weight: 600;
+}
+.showbtn{
+    width: 100%;
+    background-color:rgb(255,56,92) ;
+    border: 1.5px solid black;
+}
+
+.cards{
+    border: 1px solid black !important;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+#map { 
+    height: 400px;
+    width: 700px;
+}
+
+#filters{
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#filter{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 5%;
+margin-right: 1rem;
+opacity: 0.9;
+transition: all 0.2s ease;
+padding-right: 2rem;
+cursor: pointer;
+}
+#filter:hover{
+    opacity: 1;
+    scale: 0.9;
+}
+#filter i{
+    padding-bottom: 0.5rem;
+}
+.togglediv{
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+.tax{
+    display: none;
+}
+.filterfonts{
+    font-size: 1.3rem;
+}
+
+
+  .input{
+    border-radius: 50px;
+    padding: 7px 10px;
+    width: 15rem;
+  }
+  .searchbtn{
+    border-radius: 50px;
+    padding: 7px 20px;
+    background-color:rgb(255,56,92);
+    margin-left: 0.5rem;
+  }

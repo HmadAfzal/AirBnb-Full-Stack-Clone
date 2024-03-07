@@ -1,0 +1,40 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="row formnew">
+    <div class="col-4 offset-4">
+        <h1>SignUp to AirBnb</h1>
+        <form action="/signup" method="post"  class="newform needs-validation" novalidate>
+
+            <div> <label for="username" class="form-label mt-3">Username</label><input type="text" name="username"
+                placeholder="Username" class="form-control" required>
+                <div class="valid-feedback">
+                    Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Username required!
+        </div>
+                
+                  </div>
+                  <div> <label for="email" class="form-label mt-3">Email</label><input type="email" name="email"
+                    placeholder="Email" class="form-control" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Email required!
+            </div>
+                    
+                      </div>
+                      <div> <label for="password" class="form-label mt-3">Password</label><input type="password" name="password"
+                        placeholder="Password" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Password missing!
+                </div>
+                   </div>
+
+                   <button class="mt-4">SignUp</button>
+
+        </form>
+        
+    </div>
+</div>

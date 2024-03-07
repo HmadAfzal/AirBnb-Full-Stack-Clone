@@ -1,0 +1,60 @@
+<% layout("/layouts/boilerplate.ejs") %>
+    <div class="row formnew">
+        <div class="col-8 offset-2">
+            <h1 class="editheading mt-n3">Edit</h1>
+            <form method="POST" action="/listings/<%=listing._id%>/edit?_method=PATCH "
+                class="editform needs-validation" novalidate enctype="multipart/form-data">
+                <div class="mb-3"> <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" placeholder="Title" class="form-control"
+                        value="<%= listing.title %>" required>
+                    <div class="invalid-feedback">
+                        Please Enter a Title!
+                    </div>
+                </div>
+                <div class="mb-3"><p>Original listing image</p><img src="<%= decListindimg %>" alt="">
+                </div>
+                    
+                <div class="mb-3"><label for="image" class="form-label">New Image</label><input
+                        class="form-control" type="file" name="image" placeholder="New Image">
+                   
+                </div>
+
+                <div class="mb-3"><label for="description" class="form-label">Description</label> <textarea
+                        class="form-control" name="description" cols="30" rows="10" placeholder="Description"
+                        required><%= listing.description %></textarea>
+                    <div class="invalid-feedback">
+                        Description required!
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-4" required> <label for="Price" class="form-label">Price</label><input
+                            type="number" class="form-control" name="price" placeholder="Price"
+                            value="<%= listing.price %>" required>
+                        <div class="invalid-feedback">
+                            Please Enter a valid price!
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-md-8"><label for="country" class="form-label">Country</label><input type="text"
+                            class="form-control" name="country" placeholder="country" value="<%= listing.country %>"
+                            required>
+                        <div class="invalid-feedback">
+                            Please Enter a Country!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3"> <label for="location" class="form-label">Location</label><input type="text"
+                        class="form-control" name="location" placeholder="Location" value="<%= listing.location %>"
+                        required>
+                    <div class="invalid-feedback">
+                        Location required!
+                    </div>
+                </div>
+
+
+                <button class="editbtn">Save</button>
+            </form>
+        </div>
+    </div>
